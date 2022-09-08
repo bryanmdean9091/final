@@ -1,10 +1,14 @@
-.body {
-   background-image: url("./images/65f2655a177f168d05f183bfe2c5b7e3_w200.webp");
-   background-repeat: initial;
+/* .body {
+   background: black;
+} */
+.spiral {
+
+  background-image: url("./images/spiral.gif");
+  height:100vh;
+    width:100vw;
 }
 .wrapper {
     display: flex;
-  
 }
 
 .paper {
@@ -18,13 +22,30 @@
     margin-left: auto;
     margin-right: auto;
 }
+#gif {
+  background-image: url("./images/spiral.gif");
+}
+.mash {
+  font-family:'Nanum Pen Script', cursive;
+  margin-top: .25em;
+  margin-bottom: 25rem;
+  font-size: 10vw;
+  position: absolute;
+  color: gold;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
     /* text-align: center; */
     font-family:'Nanum Pen Script', cursive;
     margin-top: .25em;
-    margin-bottom: 25rem;
+    margin-bottom: 25rem; 
     font-size: 10vw;
-    position: absolute;
+    position: absolute; 
+    
    
 }
 .prompt {
@@ -39,6 +60,9 @@ h1 {
     word-wrap: break-word;
   
     
+}
+.show {
+  display: block;
 }
 
 .form-box {
@@ -68,36 +92,54 @@ h1 {
 }
 .btn {
   position: absolute;
+  width: 30%;
   background-color: red;
   border: .25rem solid black;
   margin-top: 36rem;
-
+  cursor: pointer;
+  font-weight: bolder;
 }
-.spiral {
-  background-image: url("./images/spiral.gif");
-  
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 50%;
-  height: 50%;
-  
+.btn:hover {
+  background-color: red;
 }
-h2 {
+.resetBtn {
   position: absolute;
-  margin-top:35rem;
-  font-family:'Nanum Pen Script', cursive; 
-  font-size: 3vw;
+  width: 30%;
+  height: 3rem;
+  background-color: gold;
+  border: .25rem solid black;
+  margin-top: 36rem;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 2%;
 }
+
 .mash {
   font-size: 8vw;
 }
+.hidden {
+  display: none;
+}
+.future {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  margin-top: 15rem;
+  font-size: 1.5vw;
+}
+.hidden2 {
+  display: none;
+}
+.hidden3 {
+  display: none;
+}
 
 
+/* media queries */
 
 /* Galaxy Fold */
-@media only screen and (min-width: 280px) and (min-height:653px) {
+@media only screen and (min-width: 280px) and (min-height:) {
   h1 {
-    font-size: 15vw;
+    font-size: 20vw;
   }
     .paper {
       width: 100vw;
@@ -109,10 +151,16 @@ h2 {
     .btn {
       margin-top: 34rem;
     }
+    h2 {
+     font-size: 10rem !important;
+    }
+    .answer {
+      font-size: 10rem !important ;
+    }
   }
  @media only screen and (min-width: 295px) and (max-width: 389px) {
   h1 {
-    font-size: 15vw;
+    font-size:20vw; 
   }
     .paper {
       width: 100vw;
@@ -123,7 +171,7 @@ h2 {
   }
   @media only screen and (min-width: 390px) and (min-height:844px) {
     h1 {
-      font-size: 15vw;
+      font-size: 20vw;
     }
       .paper {
         width: 100vw;
@@ -131,12 +179,15 @@ h2 {
       .form-box {
         height: 42vh;
       }
+      .btn {
+        margin-top: 37rem;
+      }
     }
   
     /* iPhoneXr */
-    @media only screen and (min-width: 414px) and (min-height:896px) {
+    @media only screen and (min-width: 414px) and (min-height:) {
       h1 {
-        font-size: 15vw;
+        font-size: 20vw;
       }
         .paper {
           width: 100vw;
@@ -145,13 +196,16 @@ h2 {
           height: 42vh;
         }
         .btn {
-          margin-top: 32.5rem;
+          margin-top: 34rem;
+        }
+        h2 {
+          font-size: 25rem;
         }
       }
       /* galaxyS8+ */
       @media only screen and (min-width: 360px) and (min-height:740px) {
         h1 {
-          font-size: 15vw;
+          font-size: 20vw;
         }
           .paper {
             width: 100vw;
@@ -187,7 +241,7 @@ h2 {
       width: 100vw;
     }
     .form-box {
-      height: 50vh;
+      height: 65vh;
       margin-top: 30rem;
     }
     .btn {
@@ -226,8 +280,8 @@ h2 {
        margin-top:44rem ;
      }
    }
-   /* NestHub */
-   /* @media only screen and (min-width: 1024px) and (min-height: 600px) {
+   /* NestHub  */
+    /* @media only screen and (min-width: 1024px) and (min-height: 600px) {
     h1 {
      font-size: 18vw;
    }
@@ -257,7 +311,7 @@ h2 {
       width:75vw;
     }
     .form-box {
-      height: 40vh;
+      height: 50vh;
     }
   
   } 
@@ -270,7 +324,6 @@ h2 {
     .paper {
      width:50vw ;
     }
-  
   }
   
    /* X-Large devices (large desktops, 1200px and up) */
