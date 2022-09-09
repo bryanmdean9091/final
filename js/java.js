@@ -39,27 +39,41 @@ function switchUp() {
   hiddenNum +=1
 };
 
+const mash = ['mansion', 'apartment', 'shack', 'house']
+let mashWord = mash[Math.floor(Math.random() * mash.length)];
+console.log(mashWord);
 
-function finalScreen() {
+let finalAnswer = (`You will marry ${mashResult[0]}, earn a living as a ${mashResult[1]}, have ${mashResult[2]} beautiful children and live in a ${mashWord}!`);
+
+
+function finalScreen() { 
   document.getElementsByClassName("form-box")[0].classList.add("hidden");
   document.getElementsByClassName("change")[0].classList.add("hidden");
-  document.getElementsByClassName("resetBtn")[0].classList.add("show");
-  document.getElementsByClassName("resetBtn")[0].classList.remove("hidden");
+  document.getElementsByClassName("wait")[0].classList.add("show")
+  document.getElementsByClassName("wait")[0].classList.remove("hidden2")
+  setTimeout(future, 6000);
+ function future() {
+  
+  document.getElementsByClassName("wait")[0].classList.add("hidden2")
+  document.getElementsByClassName("wait")[0].classList.remove("show")
   document.getElementsByClassName("future")[0].classList.add("show");
   document.getElementsByClassName("future")[0].classList.remove("hidden2");
-  document.getElementsByClassName("spiral")[0].classList.add("show");
-  document.getElementsByClassName("spiral")[0].classList.remove("hidden3");
-
-
+  document.getElementsByClassName("resetBtn")[0].classList.add("show");
+  document.getElementsByClassName("resetBtn")[0].classList.remove("hidden");
+  document.body.style.backgroundImage  = "url(./css/images/spiraly.gif)"
+  console.log(mash.Result)
+  document.getElementById("answers").innerHTML = `You will marry ${mashResult[0]}, earn a living as a ${mashResult[1]}, have ${mashResult[2]} beautiful children and live in a ${mashWord}!`
+  // alert(`You will marry ${mashResult[0]}, earn a living as a ${mashResult[1]}, have ${mashResult[2]} beautiful children and live in a ${mashWord}!`);
+  
+ 
+} 
 }
 function resetScreen() { //refreshes screen with reset button
   let resetBtn = document.getElementsByClassName("resetBtn")[0];//targeting Submit button
   resetBtn.onclick =  window.location.reload();  
-}
+};
 
 
 
 
-const mash = ['mansion', 'apartment', 'shack', 'house']
-let mashWord = mash[Math.floor(Math.random() * mash.length)];
-console.log(mashWord)
+// console.log(finalAnswer)
