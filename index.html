@@ -25,15 +25,10 @@
     <div class="wrapper">
         <div class="container-fluid paper">
             <div class="header">
-                <!-- <h1 class=" masher1 show2">M.</h1>
-                <h1 class=" masher2">A.</h1>
-                <h1 class=" masher3">S.</h1>
-                <h1 class=" masher4">H.</h1> -->
-
-                <h1 class="mashed1">M.</h1>
-                <h1 class="mashed2">A.</h1>
-                <h1 class="mashed3">S.</h1>
-                <h1 class="mashed4">H.</h1>
+                <h1 class="mashed1 show2">M.</h1>
+                <h1 class="mashed2 show2">A.</h1>
+                <h1 class="mashed3 show2">S.</h1>
+                <h1 class="mashed4 show2">H.</h1>
             </div>
             <div class="future hidden2">
                 <h2 id="answers"></h2>
@@ -51,13 +46,16 @@
                 </p>
                 <p class="prompt hidden">Please enter 4 <br> different numbers <br>between 1-25</p>
                 <div class="input-box">
-                    <input class="inputBoxTop box" type="text" placeholder="1" id="input1" required>
-                    <input class="inputBox box" type="text" placeholder="2" id="input2" required>
-                    <input class="inputBox box" type="text" placeholder="3" id="input3" required>
-                    <input class="inputBox box " type="text" placeholder="4" id="input4" required>
+                    <form id="form">
+                        <input  onkeydown="handleEnter(event)" class="inputBoxTop box"  type="text" autofocus = "autofucus" placeholder="1"
+                            id="input1" required>
+                        <input onkeydown="handleEnter(event)"  class="inputBox box" type="text" placeholder="2" id="input2" required>
+                        <input onkeydown="handleEnter(event)" class="inputBox box" type="text" placeholder="3" id="input3" required>
+                        <input  class="inputBox box" type="text" placeholder="4" id="input4" required>
+                    </form>
                 </div>
             </div>
-            <button class="btn change" onclick="addAll()">Submit</button>
+            <button class="btn change" onclick="addAll();inputCursor()">Submit</button>
             <button class="resetBtn hidden" type="reset" onclick="resetScreen()">Reset</button>
 
         </div>
