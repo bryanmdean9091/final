@@ -50,21 +50,21 @@ function inputCursor() {//function auto starts cursor in form box one upon click
 function finalScreen() {
   document.getElementsByClassName("form-box")[0].classList.add("hidden");
   document.getElementsByClassName("change")[0].classList.add("hidden");
-  document.getElementsByClassName("wait")[0].classList.add("show")
+  document.getElementsByClassName("wait")[0].classList.add("show");
   document.getElementsByClassName("wait")[0].classList.remove("hidden2")
   mashSelect()
   setTimeout(future, 4500);
 
   function future() {
-    document.getElementsByClassName("wait")[0].classList.add("hidden2")
-    document.getElementsByClassName("wait")[0].classList.remove("show")
+    document.getElementsByClassName("wait")[0].classList.add("hidden2");
+    document.getElementsByClassName("wait")[0].classList.remove("show");
     document.getElementsByClassName("future")[0].classList.add("show");
     document.getElementsByClassName("future")[0].classList.remove("hidden2");
     document.getElementsByClassName("resetBtn")[0].classList.add("show");
     document.getElementsByClassName("resetBtn")[0].classList.remove("hidden");
-    document.body.style.backgroundImage = "url(./css/images/spiraly.gif)"
+    document.body.style.backgroundImage = "url(./css/images/spiraly.gif)";
     console.log(mash.Result)
-    document.getElementById("answers").innerHTML = `You will marry ${mashResult[0]}, earn a living as a ${mashResult[1]}, have ${mashResult[2]} beautiful children and live in a ${mashWord}!`
+    document.getElementById("answers").innerHTML = `You will marry ${mashResult[0]}, earn a living as a ${mashResult[1]}, have ${mashResult[2]} beautiful children and live in a ${mashWord}!`;
   }
 }
 
@@ -80,72 +80,74 @@ function handleEnter(event) { //function to allow key "enter" to switch to next 
     form.elements[index + 1].focus(); //on each "enter", it will advance to the next input[index + 1]
     //event.preventDefault();
   }
-}
+};
+
+
 
 function mashSelect() {
-  document.getElementsByClassName("mashed1")[0].classList.remove("show2")
-  document.getElementsByClassName("mashed1")[0].classList.add("hidden2")
+  document.getElementsByClassName("mashed1")[0].classList.remove("show2");
+  document.getElementsByClassName("mashed1")[0].classList.add("hidden2");
   const selectM = setTimeout(M, 500);
 
   function M() {
-    document.getElementsByClassName("mashed1")[0].classList.remove("hidden2")
-    document.getElementsByClassName("mashed1")[0].classList.add("show2")
+    document.getElementsByClassName("mashed1")[0].classList.remove("hidden2");
+    document.getElementsByClassName("mashed1")[0].classList.add("show2");
 
-    document.getElementsByClassName("mashed2")[0].classList.remove("show2")
-    document.getElementsByClassName("mashed2")[0].classList.add("hidden2")
+    document.getElementsByClassName("mashed2")[0].classList.remove("show2");
+    document.getElementsByClassName("mashed2")[0].classList.add("hidden2");
     const selectA = setTimeout(A, 500);
 
     function A() {
-      document.getElementsByClassName("mashed2")[0].classList.remove("hidden2")
-      document.getElementsByClassName("mashed2")[0].classList.add("show2")
+      document.getElementsByClassName("mashed2")[0].classList.remove("hidden2");
+      document.getElementsByClassName("mashed2")[0].classList.add("show2");
 
-      document.getElementsByClassName("mashed3")[0].classList.remove("show2")
-      document.getElementsByClassName("mashed3")[0].classList.add("hidden2")
+      document.getElementsByClassName("mashed3")[0].classList.remove("show2");
+      document.getElementsByClassName("mashed3")[0].classList.add("hidden2");
       const selectS = setTimeout(S, 500);
 
       function S() {
-        document.getElementsByClassName("mashed3")[0].classList.remove("hidden2")
-        document.getElementsByClassName("mashed3")[0].classList.add("show2")
+        document.getElementsByClassName("mashed3")[0].classList.remove("hidden2");
+        document.getElementsByClassName("mashed3")[0].classList.add("show2");
 
-        document.getElementsByClassName("mashed4")[0].classList.remove("show2")
-        document.getElementsByClassName("mashed4")[0].classList.add("hidden2")
+        document.getElementsByClassName("mashed4")[0].classList.remove("show2");
+        document.getElementsByClassName("mashed4")[0].classList.add("hidden2");
         const selectH = setTimeout(H, 500);
 
         function H() {
-          document.getElementsByClassName("mashed4")[0].classList.remove("hidden2")
-          document.getElementsByClassName("mashed4")[0].classList.add("show2")
+          document.getElementsByClassName("mashed4")[0].classList.remove("hidden2");
+          document.getElementsByClassName("mashed4")[0].classList.add("show2");
 
-          document.getElementsByClassName("mashed1")[0].classList.remove("show2")
-          document.getElementsByClassName("mashed1")[0].classList.add("hidden2")
+          document.getElementsByClassName("mashed1")[0].classList.remove("show2");
+          document.getElementsByClassName("mashed1")[0].classList.add("hidden2");
           const selectM = setTimeout(M, 500);
 
           function M() {
-            document.getElementsByClassName("mashed1")[0].classList.remove("hidden2")
-            document.getElementsByClassName("mashed1")[0].classList.add("show2")
+            document.getElementsByClassName("mashed1")[0].classList.remove("hidden2");
+            document.getElementsByClassName("mashed1")[0].classList.add("show2");
 
-            document.getElementsByClassName("mashed2")[0].classList.remove("show2")
-            document.getElementsByClassName("mashed2")[0].classList.add("hidden2")
+            document.getElementsByClassName("mashed2")[0].classList.remove("show2");
+            document.getElementsByClassName("mashed2")[0].classList.add("hidden2");
             const selectA = setTimeout(A, 500);
 
             function A() {
-              document.getElementsByClassName("mashed2")[0].classList.remove("hidden2")
-              document.getElementsByClassName("mashed2")[0].classList.add("show2")
+              document.getElementsByClassName("mashed2")[0].classList.remove("hidden2");
+              document.getElementsByClassName("mashed2")[0].classList.add("show2");
 
-              document.getElementsByClassName("mashed3")[0].classList.remove("show2")
-              document.getElementsByClassName("mashed3")[0].classList.add("hidden2")
+              document.getElementsByClassName("mashed3")[0].classList.remove("show2");
+              document.getElementsByClassName("mashed3")[0].classList.add("hidden2");
               const selectS = setTimeout(S, 500);
 
               function S() {
-                document.getElementsByClassName("mashed3")[0].classList.remove("hidden2")
-                document.getElementsByClassName("mashed3")[0].classList.add("show2")
+                document.getElementsByClassName("mashed3")[0].classList.remove("hidden2");
+                document.getElementsByClassName("mashed3")[0].classList.add("show2");
 
-                document.getElementsByClassName("mashed4")[0].classList.remove("show2")
-                document.getElementsByClassName("mashed4")[0].classList.add("hidden2")
+                document.getElementsByClassName("mashed4")[0].classList.remove("show2");
+                document.getElementsByClassName("mashed4")[0].classList.add("hidden2");
                 const selectH = setTimeout(H, 500);
 
                 function H() {
-                  document.getElementsByClassName("mashed4")[0].classList.remove("hidden2")
-                  document.getElementsByClassName("mashed4")[0].classList.add("show2")
+                  document.getElementsByClassName("mashed4")[0].classList.remove("hidden2");
+                  document.getElementsByClassName("mashed4")[0].classList.add("show2");
 
 
 

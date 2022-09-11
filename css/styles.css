@@ -35,13 +35,6 @@
   color: green;
   -webkit-text-stroke:2px black
 }
- 
-.mashed5 {
-  font-size: 20vw;
-  color: red;
-  -webkit-text-stroke:2px black;
-
-}
 
 .paper {
     display: flex;
